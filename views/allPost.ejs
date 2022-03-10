@@ -1,0 +1,16 @@
+<%- include("partials/header", {authentication:authentication}); -%>
+    <% if(user.posts.length===0) { %>
+        <h1>You have not posted any blogs yet!</h1>
+    <% } %>
+    <% user.posts.map(post=> { %>
+        <div>
+            <h1>
+                <%= post.title %> 
+            </h1>
+            <p>
+                <%= post.content %>
+            </p>
+        </div>
+        <% }) %>
+
+<%- include("partials/footer"); %>
