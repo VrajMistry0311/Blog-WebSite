@@ -1,41 +1,40 @@
 <%- include("partials/header", {authentication:authentication}); -%>
-<div class="container mt-5">
-  <h1>Register</h1>
+  <div class="container mt-5">
+    <h1>Register</h1>
 
-  <div class="row">
-    <div class="col-sm-8">
-      <div class="card">
-        <div class="card-body">
+    <div class="row">
+      <div class="col-sm-8">
+        <div class="card">
+          <div class="card-body">
 
-          <!-- Makes POST request to /register route -->
-          <form action="/register" method="post">
-            <div class="form-group bottom-margin">
-              <label for="email">Email</label>
-              <input type="email" class="form-control" name="username">
-            </div>
-            <div class="form-group bottom-margin">
-              <label for="password">Password</label>
-              <input type="password" class="form-control" name="password">
-            </div>
-            <button type="submit" name="button" class="btn btn-dark">Register</button>
-          </form>
+            <form action="/register" method="post">
+              <div class="form-group bottom-margin">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" name="username">
+              </div>
+              <div class="form-group bottom-margin">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" name="password">
+              </div>
+              <button type="submit" name="button" class="btn btn-dark">Register</button>
+            </form>
+          </div>
+        </div>
+        <p style="float:right;">Already have an account? <a class="register-text" href="/login">Login now</a></p>
+      </div>
+
+      <div class="col-sm-4">
+        <div class="card social-block">
+          <div class="card-body">
+            <a class="btn btn-block btn-social btn-google full-width" href="/auth/google" role="button">
+              <i class="fab fa-google"></i>
+              Sign Up with Google
+            </a>
+          </div>
         </div>
       </div>
-      <p style="float:right;">Already have an account? <a href="/login">Login now</a></p>
-    </div>
 
-    <div class="col-sm-4">
-      <div class="card social-block">
-        <div class="card-body">
-          <a class="btn btn-block btn-social btn-google full-width" href="/auth/google" role="button">
-            <i class="fab fa-google"></i>
-            Sign Up with Google
-          </a>
-        </div>
-      </div>
     </div>
-
   </div>
-</div>
 
-<%- include('partials/footer') %>
+  <%- include('partials/footer') %>
