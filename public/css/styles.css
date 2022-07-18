@@ -1,8 +1,17 @@
+.home-container {
+    min-height: 80vh;
+}
+
+.read-more-text {
+    text-decoration: none;
+    color: #a1a2a2;
+}
 
 .container-fluid {
     padding-top: 70px;
     padding-bottom: 70px;
 }
+
 .navbar {
     padding-top: 15px;
     padding-bottom: 15px;
@@ -17,54 +26,62 @@
     position: relative;
     left: 150px;
 }
-.navbar-nav  li a:hover {
+
+.navbar-nav li a:hover {
     color: #1abc9c !important;
 }
 
 .btn-user {
     background-color: #1abc9c;
     border-radius: 50%;
-    border: 1px solid rgba(0,0,0,.55);
-    /* position: relative;
-    right: 30px; */
+    border: 1px solid rgba(0, 0, 0, .55);
 }
 
 .compose-button {
     margin-top: 10px;
 }
 
-/* .footer-padding {
-	padding-bottom: 60px;
-} */
+.footer-padding {
+    padding-bottom: 60px;
+}
+
 .btn-login {
     background-color: #1abc9c;
 }
 
 
 .footer {
-    position: fixed;
-	text-align: center;
-	width: 100%;
+    text-align: center;
+    width: 100%;
     bottom: 0;
-	/* height: 80px; */
-	background-color: #1abc9c;
-    padding-bottom: 6px;
+    background-color: #1abc9c;
+    padding: 1.5vmax 1vmax;
 }
 
-.footer p{
+.footer p {
     /* padding-top: 10px; */
-	margin-top: 12px;
-	font-size: 12px;
+    margin-top: 12px;
+    font-size: 0.8vmax;
     color: #fff;
     margin-bottom: 0;
 }
 
 .footer a {
-    font-size: 10px;
+    text-decoration: none;
+    font-size: 0.8vmax;
     margin: auto 2px;
     color: #fff;
 }
 
+.register-text {
+    text-decoration: none;
+    color: #a1a2a2;
+}
+
+.register-text:hover {
+    text-decoration: none;
+    color: #1abc92;
+}
 
 
 .bottom-margin {
@@ -73,13 +90,14 @@
 
 .full-width {
     display: block;
-  }
+}
 
-  
+
 @media (max-width: 793px) {
     .btn-user {
         display: none;
     }
+
     .nav-ul {
         position: static;
     }
